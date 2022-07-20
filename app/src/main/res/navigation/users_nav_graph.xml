@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/users_nav_graph"
+    app:startDestination="@id/listUsersFragment">
+
+    <fragment
+        android:id="@+id/listUsersFragment"
+        android:name="com.greentea.gitusers2.ui.fragments.ListUsersFragment"
+        android:label="fragment_list_users"
+        tools:layout="@layout/fragment_list_users" >
+        <action
+            android:id="@+id/action_listUsersFragment_to_userDetailFragment"
+            app:destination="@+id/userDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteUsersFragment"
+        android:name="com.greentea.gitusers2.ui.fragments.FavoriteUsersFragment"
+        android:label="fragment_favorite_users"
+        tools:layout="@layout/fragment_favorite_users" >
+        <action
+            android:id="@+id/action_favoriteUsersFragment_to_userDetailFragment"
+            app:destination="@+id/userDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.greentea.gitusers2.ui.fragments.UserDetailFragment"
+        android:label="fragment_user_detail"
+        tools:layout="@layout/fragment_user_detail" >
+        <argument
+            android:name="user"
+            app:argType="com.greentea.gitusers2.services.models.ListUsersResponseItem" />
+        <action
+            android:id="@+id/action_userDetailFragment_self"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/switchModeFragment"
+        android:name="com.greentea.gitusers2.ui.fragments.SwitchModeFragment"
+        android:label="fragment_switch_mode"
+        tools:layout="@layout/fragment_switch_mode" />
+
+</navigation>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GitUsers2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">greentea99</string>
+
+    <!--FOR BOTTOM NAVIGATION-->
+    <string name="homepage">Home</string>
+    <string name="favorite">Favorite</string>
+
+    <!--FOR ITEM ROW USER-->
+    <string name="github_link">github.com/greentea99</string>
+    <string name="type_user">Admin</string>
+
+    <!--FOR FRAGMENT USER DETAIL-->
+    <string name="name">Name</string>
+    <string name="company_name">PT. Example</string>
+    <string name="location">Indonesia</string>
+    <string name="follow_button">Follow</string>
+    <string name="followers">%s Followers</string>
+    <string name="following">%s Following</string>
+    <string name="repositories">%s Repositories</string>
+    <string name="share">Share</string>
+    <string name="tab_layout_user">Tab Layout User</string>
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+    <string name="search_hint">Search for user</string>
+    <string name="switch_mode">Switch Mode</string>
+    <string name="dark_mode">Try with Dark Mode</string>
+
+</resources>

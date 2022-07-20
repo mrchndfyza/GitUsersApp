@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/listUsersFragment"
+        android:title="@string/homepage"
+        android:icon="@drawable/ic_baseline_homepage"/>
+
+    <item
+        android:id="@+id/favoriteUsersFragment"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_baseline_favorite"/>
+
+    <item
+        android:id="@+id/switchModeFragment"
+        android:title="@string/switch_mode"
+        android:icon="@drawable/ic_baseline_switch_mode"/>
+
+</menu>
